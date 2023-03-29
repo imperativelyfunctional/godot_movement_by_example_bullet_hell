@@ -8,4 +8,4 @@ https://discord.gg/bdSe7hvNb6
 Youtube demo: https://youtu.be/NPmpEMQqOnA
 
 
-![demo](https://github.com/imperativelyfunctional/simple_bullet_hell_2/blob/main/demo.gif)
+![demo](https://github.com/imperativelyfunctional/godot_movement_by_example_bullet_hell/blob/main/demo.gif)
