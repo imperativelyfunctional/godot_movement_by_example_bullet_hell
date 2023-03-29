@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://qrhghlm87srg"]
+
+[ext_resource type="Script" path="res://scenes/rotator/rotator.gd" id="1_xx8jd"]
+
+[node name="Rotator" type="ColorRect"]
+modulate = Color(0.294118, 0.568627, 1, 1)
+self_modulate = Color(7.35, 0.96, 0.18, 1)
+offset_right = 40.0
+offset_bottom = 40.0
+pivot_offset = Vector2(20, 20)
+color = Color(1, 0.278431, 1, 1)
+script = ExtResource("1_xx8jd")
+number_of_bullets = 4
+
+[node name="FireTimer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true
+
+[node name="MoveTimer" type="Timer" parent="."]
+wait_time = 2.0
+autostart = true
+
+[connection signal="timeout" from="FireTimer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="MoveTimer" to="." method="_on_move_timer_timeout"]

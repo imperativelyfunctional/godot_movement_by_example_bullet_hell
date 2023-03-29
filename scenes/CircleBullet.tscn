@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc5af1c4n8squ"]
+
+[ext_resource type="Script" path="res://scenes/bullets/circle_bullet.gd" id="1_jy4m2"]
+
+[node name="CircleBullet" type="Node2D"]
+position = Vector2(331, 338)
+script = ExtResource("1_jy4m2")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
