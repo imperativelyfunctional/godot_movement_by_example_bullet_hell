@@ -28,8 +28,7 @@ func _on_timer_timeout():
 		b.frequency = 5
 		b.offset = 0.0
 	
-		b.position = position + Vector2(20, 20) + 
-			Vector2(cos(angle * i + init_angle), sin(angle * i + init_angle)) * distance_from_center
+		b.position = position + Vector2(20, 20) + Vector2(cos(angle * i + init_angle), sin(angle * i + init_angle)) * distance_from_center
 		get_parent().add_child.call_deferred(b)
 
 func _on_move_timer_timeout():
